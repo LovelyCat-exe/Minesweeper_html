@@ -36,7 +36,7 @@ A classic **Minesweeper game** built with **HTML + CSS + JavaScript**.
 1. 下载或克隆本项目  
    Download or clone this repository:
    ```bash
-   git clone https://github.com/yourusername/minesweeper.git
+   git clone https://github.com/LovelyCat-exe/Minesweeper_html.git
    ```
 2. 打开 `index.html` 即可在浏览器中运行游戏  
    Open `index.html` in your browser to play.
