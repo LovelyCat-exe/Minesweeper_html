@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>扫雷游戏</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-info">
+            <button id="new-game">新游戏</button>
+            <button id="flag-mode-btn" class="inactive">🚩</button>
+            <button id="settings-btn">设置</button>
+            <span>雷数: <span id="mine-count">10</span></span>
+            <span style="margin-left: 20px;">历史最高分: <span id="high-score">0</span></span>
+        </div>
+        <div id="mine-field" class="mine-field"></div>
+    </div>
+
+    <div id="game-over-overlay" class="hidden">
+        <div id="game-over-message"></div>
+    </div>
+
+    <div id="settings-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>游戏设置</h2>
+            <label>
+                行数(5-30):
+                <input type="number" id="setting-rows" min="5" max="30" value="10" />
+            </label>
+            <label>
+                列数(5-30):
+                <input type="number" id="setting-cols" min="5" max="30" value="10" />
+            </label>
+            <label>
+                雷数:
+                <input type="number" id="setting-mines" min="1" value="10" />
+            </label>
+            <div class="modal-buttons">
+                <button id="settings-save">保存</button>
+                <button id="settings-cancel">取消</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
